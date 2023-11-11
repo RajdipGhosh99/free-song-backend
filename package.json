@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development tsx watch ./src/server.ts",
     "start": "npm run build && cross-env NODE_ENV=production node public/server.js",
-    "build": "npm run build && cross-env NODE_ENV=development node public/server.js",
+    "build": "cross-env NODE_ENV=development node public/server.js",
     "format": "prettier --write \"./**/*.{js,ts,json}\"",
     "lint": "eslint . --ext \".ts\"",
     "lint:fix": "eslint --fix --ext .js,.ts .",
